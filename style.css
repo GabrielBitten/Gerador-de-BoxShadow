@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background: linear-gradient(180deg, #d2ff1f 10%, #faf4e0 66%, #ffc300 100%);
+    padding-bottom: 100px;
+}
+h2{
+    margin-bottom: 1.6rem;
+    text-align: center;
+    color: #171133;
+    font-weight: bold;
+}
+
+#box-shadow-generator{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#controls-container,
+#preview{
+    flex: 1;
+    padding: 2rem;
+   
+}
+#preview{
+  font-size: 1.5rem;
+    -webkit-text-stroke: 0.5px #d2ff1f;
+}
+
+
+.form-control{
+    display: flex;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #171133;
+    
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #581e44;
+}
+
+.range-input{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.range-input input[type="range"]{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 24px;
+    border-radius: 25px;
+    border: 1px solid #3b0c2c;
+    background-color: transparent;
+    outline: none;
+}
+.range-input input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+     width: 25px;
+     height: 25px;
+     background-color: #3b0c2c;
+     border-radius: 25px;
+     cursor: pointer;
+}  
+.reference-input{
+    display: flex;
+    align-items: center;
+}
+.reference-input p{
+    padding-right: 5px;
+    margin-top: 2rem;
+    margin-left: 2px;
+    font-weight: bold;
+}
+.reference-input input{
+    margin-top: 2rem;
+    border: none;
+    border: 1px solid #171133;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+#box{
+    width: 100%;
+    height: 300px;
+    background-color: #ff6a00;
+}
+
+#generated-rule{
+    text-align: center;
+}
+#generated-rule p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+#rule-area{
+    background-color: #faf4e0;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 3px solid #171133;
+    transition: .3s;
+}
+
+#color-value{
+    min-width: 100px;
+}
+#inset{
+    align-items: start;
+    height: 20px;
+    width: 20px;
+}
+#rule-area:hover{
+    background-color: #dfdfdf;
+    cursor: pointer;
+}
+#copy{
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+@media(max-width: 425px){
+    #box-shadow-generator{
+        flex-direction: column;
+    }
+  
+    #controls-container,
+    #preview{
+        padding: 1rem 2rem;
+    }
+    #box{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    #generated-rule{
+        margin-top: 2rem;
+    }
+    #rule-area{
+        margin: 0 20px;
+
+    }
+}
