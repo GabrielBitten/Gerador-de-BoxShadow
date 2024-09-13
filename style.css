@@ -4,8 +4,13 @@
     font-family: 'Roboto Mono', monospace;
 }
 body{
-    background: linear-gradient(180deg, #d2ff1f 10%, #faf4e0 66%, #ffc300 100%);
+    background-color: whitesmoke;
     padding-bottom: 100px;
+}
+#title{
+    text-align:center;
+    font-size:38px !important;
+    margin:50px;
 }
 h2{
     margin-bottom: 1.6rem;
